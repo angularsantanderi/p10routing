@@ -6,6 +6,10 @@ import { SoporteComponent } from './soporte/soporte.component';
 const routes: Routes = [
   {path: '', component: InicioComponent},
   {path: 'soporte', component: SoporteComponent},
+  {
+    path: 'ventas',
+    loadChildren: () => import('./ventas/ventas.module').then(m => m.VentasModule)
+  },
   {path: '**', redirectTo: ''}
 ];
 
