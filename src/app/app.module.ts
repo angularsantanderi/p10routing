@@ -7,13 +7,15 @@ import { InicioComponent } from './inicio/inicio.component';
 import { SoporteComponent } from './soporte/soporte.component';
 import { NavComponent } from './nav/nav.component';
 import { CompartidoModule } from './compartido/compartido.module';
+import { AccesoNoAutorizadoComponent } from './acceso-no-autorizado/acceso-no-autorizado.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
     SoporteComponent,
-    NavComponent
+    NavComponent,
+    AccesoNoAutorizadoComponent
   ],
   imports: [
     BrowserModule,

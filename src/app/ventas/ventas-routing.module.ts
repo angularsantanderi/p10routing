@@ -6,7 +6,13 @@ import { VisualizarClienteComponent } from './clientes/visualizar-cliente/visual
 import { InicioVentasComponent } from './inicio-ventas/inicio-ventas.component';
 
 const routes: Routes = [
-  {path: '', component: InicioVentasComponent}, // Esta ruta equivale a "/ventas"
+  {
+    path: '', // Esta ruta equivale a "/ventas"
+    component: InicioVentasComponent,
+    data: {
+      titulo: 'Aplicación de ventas'
+    }
+  }, 
   {path: 'tabla-clientes', component: TablaClientesComponent},
   {path: 'visualizar-cliente/:id', component: VisualizarClienteComponent},
   {path: 'crear-cliente', component: CrearClienteComponent}
