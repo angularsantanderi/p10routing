@@ -18,5 +18,14 @@ export class ClientesService {
     return this.clientes;
   }
 
+  getCliente(id: string): any {
+    return this.clientes.find(elem => elem.id === id);
+  }
+
+  setCliente(cliente: any): void {
+    this.clientes.push(cliente);
+  }
+
+
 
 }

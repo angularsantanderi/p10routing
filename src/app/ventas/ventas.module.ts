@@ -5,17 +5,21 @@ import { VentasRoutingModule } from './ventas-routing.module';
 import { InicioVentasComponent } from './inicio-ventas/inicio-ventas.component';
 import { TablaClientesComponent } from './clientes/tabla-clientes/tabla-clientes.component';
 import { VisualizarClienteComponent } from './clientes/visualizar-cliente/visualizar-cliente.component';
+import { CrearClienteComponent } from './clientes/crear-cliente/crear-cliente.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     InicioVentasComponent,
     TablaClientesComponent,
-    VisualizarClienteComponent
+    VisualizarClienteComponent,
+    CrearClienteComponent
   ],
   imports: [
     CommonModule,
-    VentasRoutingModule
+    VentasRoutingModule,
+    FormsModule
   ]
 })
 export class VentasModule { }
