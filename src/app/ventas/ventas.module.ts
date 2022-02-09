@@ -7,6 +7,7 @@ import { TablaClientesComponent } from './clientes/tabla-clientes/tabla-clientes
 import { VisualizarClienteComponent } from './clientes/visualizar-cliente/visualizar-cliente.component';
 import { CrearClienteComponent } from './clientes/crear-cliente/crear-cliente.component';
 import { FormsModule } from '@angular/forms';
+import { CompartidoModule } from '../compartido/compartido.module';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     VentasRoutingModule,
-    FormsModule
+    FormsModule,
+    CompartidoModule
   ]
 })
 export class VentasModule { }
