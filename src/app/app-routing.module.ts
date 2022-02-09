@@ -5,7 +5,8 @@ import { SoporteComponent } from './soporte/soporte.component';
 
 const routes: Routes = [
   {path: '', component: InicioComponent},
-  {path: 'soporte', component: SoporteComponent}
+  {path: 'soporte', component: SoporteComponent},
+  {path: '**', redirectTo: ''}
 ];
 
 @NgModule({
