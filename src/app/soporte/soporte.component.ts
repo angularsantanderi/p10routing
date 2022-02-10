@@ -8,6 +8,7 @@ import { ClientesService } from '../ventas/clientes.service';
 })
 export class SoporteComponent implements OnInit {
 
+  // constructor(private clientesService: ClientesService) { } Error ya que ese servicio solo se puede usar en VentasModule
   constructor() { }
 
   ngOnInit(): void {

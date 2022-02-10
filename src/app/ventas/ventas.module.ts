@@ -8,6 +8,7 @@ import { VisualizarClienteComponent } from './clientes/visualizar-cliente/visual
 import { CrearClienteComponent } from './clientes/crear-cliente/crear-cliente.component';
 import { FormsModule } from '@angular/forms';
 import { CompartidoModule } from '../compartido/compartido.module';
+import { ClientesService } from './clientes.service';
 
 
 @NgModule({
@@ -22,6 +23,9 @@ import { CompartidoModule } from '../compartido/compartido.module';
     VentasRoutingModule,
     FormsModule,
     CompartidoModule
+  ],
+  providers: [
+    ClientesService
   ]
 })
 export class VentasModule { }

@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-import { VentasModule } from './ventas.module';
 
-@Injectable({
-  providedIn: 'any' // pendiente de concretar
-})
+// @Injectable({
+//   providedIn: VentasModule // Establecemos el ámbito del servicio en el módulo (como se hacía originalmente en Angular)
+// })
+
 export class ClientesService {
 
   private clientes: Array<any> = [
